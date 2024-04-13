@@ -10,7 +10,8 @@ function App() {
   if (error) return <span>There was an error. Please try again.</span>
   return (
     <>
-        <header className="py-4 px-10 border-b border-slate-300">
+        <header className="py-4 px-10 border-b border-slate-300 flex justify-between">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/International_Pok%C3%A9mon_logo.svg/1280px-International_Pok%C3%A9mon_logo.svg.png" alt="Pokemon Logo" />
         <Drawer>
           <DrawerContent className  ="bg-white min-h-96">
           <DrawerTitle className="text-center text-3xl mb-12">Pokemons per type</DrawerTitle>

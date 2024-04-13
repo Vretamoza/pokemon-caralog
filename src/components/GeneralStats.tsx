@@ -48,6 +48,7 @@ function GeneralStats() {
     }
     return (
         <>
+        <h2 className="text-center text-2xl font-bold mb-6">Pie chart</h2>
         <DonutChart
             data={pokemonTypes.slice(0, 18)}
             category="Quantity"
@@ -55,6 +56,7 @@ function GeneralStats() {
             variant="pie"
             onValueChange={({name}) => setPokemonFilter(name)}
         />
+        <h2 className="text-center text-2xl font-bold mb-6 mt-16">Bar chart</h2>
         <BarChart
             data={pokemonTypes.slice(0, 18)}
             index="name"

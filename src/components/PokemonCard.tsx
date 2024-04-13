@@ -67,16 +67,24 @@ function PokemonCard({ url }: { url: string }) {
               </h2>
               <div className="flex text-lg justify-evenly mb-3">
                 <div>
-                  <span>Height</span>
-                  <p>{pokemon.height}</p>
+                  <span className="font-semibold">Height</span>
+                  <p className="font-extralight">{pokemon.height}</p>
                 </div>
                 <div>
-                  <span>Weight</span>
-                  <p>{pokemon.weight}</p>
+                  <span className="font-semibold">Weight</span>
+                  <p className="font-extralight">{pokemon.weight}</p>
                 </div>
               </div>
-              <div>Abilities: {getAbilitiesString()}</div>
-              <div>Type: {getTypeString()}</div>
+              <div className="text-left w-fit m-auto">
+                <div className="font-extralight">
+                  <span className="font-semibold">Abilities: </span>
+                  {getAbilitiesString()}
+                </div>
+                <div className="font-extralight">
+                  <span className="font-semibold">Type: </span>
+                  {getTypeString()}
+                </div>
+              </div>
             </div>
           </Card>
         </SheetTrigger>
